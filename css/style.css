@@ -1,0 +1,79 @@
+@import "./registartionForm.css";
+@import "./main.css";
+@import "./gallery.css";
+@import "./menu.css";
+@import "./profile.css";
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    --main-color: rgb(141, 82, 82);
+    --content-color: rgb(70, 14, 14);
+    --button-color: rgb(155, 39, 39);
+    --invalid-color: rgb(177, 30, 30);
+    --valid-color: rgb(27, 139, 33);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+}
+
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 5;
+}
+
+.empty-header {
+    height: 100px;
+}
+
+.empty-footer {
+    margin-top: 50px;
+    height: 100px;
+}
+
+header .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header button {
+    border-radius: 10px;
+    margin: auto 15px;
+    height: 50px;
+    width: 100px;
+}
+
+main {
+    height: calc(100% - 200px);
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--main-color);
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.container {
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+}
+

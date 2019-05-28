@@ -1,0 +1,44 @@
+{
+    "render": {
+        "tag": "form",
+        "class": "registartion",
+        "content": [
+            {
+                "tag": "h2",
+                "content": "Registration"
+            },
+            {
+                "tag": "input",
+                "attr": {
+                    "type": "text",
+                    "placeholder": "input username"
+                },
+                "class": "input"
+            },
+            {
+                "tag": "input",
+                "attr": {
+                    "type": "password",
+                    "placeholder": "input password"
+                },
+                "class": "input"
+            },
+            {
+                "tag": "input",
+                "attr": {
+                    "type": "email",
+                    "placeholder": "input email"
+                },
+                "class": "input"
+            },
+            {
+                "tag": "input",
+                "attr": {
+                    "type": "submit",
+                    "value": "Registration"
+                },
+                "class": "btn"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+#profile {
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile .item {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#profile .item input {
+    height: 30px;
+    padding: 0 20px;
+}
+
+#profile .item .btn {
+    background-color: var(--main-color);
+    margin-left: 20px;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,233 @@
+
+#main {
+    display: none;
+}
+
+#main #superposable-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(255, 199, 199);
+    margin: 10px 0;
+    outline: none;
+}
+#main #superposable-btn.active {
+    background-color: rgb(211, 255, 199);
+    cursor: pointer;
+}
+
+#general {
+    width: 70%;
+    margin: 10px;
+}
+
+#video {
+    width: 100%;
+    max-height: 1200.5px;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#video-container .custom-file-input::before {
+    content: 'Select image';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    width: 200px;
+    text-align: center;
+}
+
+#video-container input[type='file'] {
+    color: transparent;
+}
+
+#video-container input {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px auto;
+    text-decoration: none;
+}
+
+.clone-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#side {
+    width: 25%;
+    height: auto;
+    margin: 10px;
+}
+
+#carousel #superposable-images {
+    max-height: 200px;
+    width: 10000px;
+    transition: margin-left .5s;
+}
+
+#carousel #superposable-images label {
+    position: relative;
+}
+
+#carousel #superposable-images .selected .checkmark:after {
+    content: "\2714";
+    position: absolute;
+    color: rgb(58, 198, 58);
+    font-size: 40px;
+    bottom: -9px;
+    left: 20px;
+}
+
+#carousel #superposable-images img {
+    width: 200px;
+    height: 200px;
+}
+
+#carousel #superposable-images img:hover {
+    cursor: pointer;
+}
+
+#carousel #superposable-images input {
+    display: none;
+}
+
+#carousel #superposable-images-container {
+    max-height: 200px;
+    width: 600px;
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .arrow {
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#carousel i {
+    color: var(--main-color);
+}
+
+#carousel #prev {
+    bottom: 0px;
+    left: 0px; 
+}
+
+#carousel #next {
+    top: 0px;
+    right: 0px;
+}
+
+#carousel2 #superposable-images {
+    height: 10000px;
+    transition: margin-top 1s;
+}
+
+#carousel2 #superposable-images label {
+    position: relative;
+}
+
+#carousel2 #superposable-images img {
+    height: 190px;
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+#carousel2 #superposable-images input {
+    display: none;
+}
+
+#carousel2 #superposable-images-container {
+    height: 600px;
+    overflow: hidden;
+    margin: 60px auto;
+    position: relative;
+}
+
+#carousel2 {
+    position: relative;
+}
+
+#carousel2 .arrow {
+    z-index: 10;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#carousel2 span {
+    position: relative;
+    height: 30px;
+}
+
+#carousel2 span i {
+    color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#carousel2 span#next {
+    bottom: -45px;
+    left: 0px; 
+}
+
+#carousel2 span#prev {
+    top: -45px;
+    right: 0px;
+}
+
+#carousel2 .image-container {
+    max-height: 200px;
+    position: relative;
+}
+
+@media (max-width: 770px) {
+    #side {
+        display: none;
+    }
+    #general {
+        width: 100%;
+    }
+}
+
+#carousel2 i {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    margin: 0;
+}

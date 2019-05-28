@@ -1,0 +1,17 @@
+<div id="main" class="container">
+    <div id="general">
+        <div id="carousel-container">
+            {{carousel}}
+        </div>
+        <button id="superposable-btn" disabled="false">Choose the image, before starting</button>
+        <div id="video-container">
+            <input type="button" value="Use webcamera">
+            <input type="file" value="Choose photo" class="custom-file-input" visability=hidden>
+            <canvas id="c" style="display:none;"></canvas>
+            <video id="video" autoplay style="display:none;">Video stream not available</video>
+        </div>
+    </div>
+    <div id="side">
+        {{carousel2}}
+    </div>
+</div>
